@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Criar conta | Meu Bolso</title>
+    <link rel="stylesheet" href="cd.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Painel esquerdo -->
+        <div class="lado-esquerdo">
+
+            <div class="logo">
+                Meu <span>Bolso.</span>
+            </div>
+
+            <div class="conteudo-esquerdo">
+
+                <h1>Seu futuro financeiro começa aqui.</h1>
+
+                <p>
+                    Organize seu dinheiro, controle seus gastos
+                    e conquiste seus objetivos com mais tranquilidade.
+                </p>
+
+                <div class="beneficios">
+
+                    <div class="beneficio">
+                        <h3>01. Controle financeiro</h3>
+                        <p>Acompanhe sua renda e suas despesas.</p>
+                    </div>
+
+                    <div class="beneficio">
+                        <h3>02. Organização</h3>
+                        <p>Saiba exatamente para onde vai seu dinheiro.</p>
+                    </div>
+
+                    <div class="beneficio">
+                        <h3>03. Planejamento</h3>
+                        <p>Prepare-se melhor para o seu futuro.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="frase">
+                Pequenas atitudes hoje,<br>
+                grandes conquistas amanhã.
+            </div>
+
+        </div>
+
+        <!-- Painel direito -->
+        <div class="lado-direito">
+
+            <div class="titulo">
+                <h2>Crie sua conta</h2>
+
+                <p>
+                    Preencha seus dados para começar
+                    a organizar suas finanças.
+                </p>
+            </div>
+
+            <form action="#" method="POST">
+
+
+
+                <div class="campo">
+                    <label for="nome">Nome completo</label>
+
+                    <input type="text" id="nome" name="name" placeholder="Digite seu nome completo" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail</label>
+
+                    <input type="email" id="email" name="email" placeholder="seuemail@email.com" required>
+                </div>
+
+                <div class="campo">
+                    <label for="senha">Senha</label>
+
+                    <input type="password" id="senha" name="password" placeholder="Crie uma senha" required>
+                </div>
+
+                <div class="campo">
+                    <label for="confirmar-senha">
+                        Confirmar senha
+                    </label>
+
+                    <input type="password" id="confirmar-senha" name="password_confirmation"
+                        placeholder="Digite sua senha novamente" required>
+                </div>
+
+                <button type="submit" class="botao">
+                    Criar minha conta →
+                </button>
+
+            </form>
+
+            <div class="login">
+                Já possui uma conta?
+
+                <a href="{{ url('/login') }}">Entrar</a>
+            </div>
+
+            <div class="seguranca">
+                🔒 Seus dados estão protegidos.
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
